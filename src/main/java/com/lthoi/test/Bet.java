@@ -36,7 +36,7 @@ public class Bet
 			this.picked_city = "Chicago";
 			this.week_number = 3;
 			this.league_season_id = 1;
-			this.line = -14;
+			this.line = 14;
 			this.isHouseBet = 0;
 			this.result = "Good Luck";
 			try 
@@ -343,6 +343,52 @@ public class Bet
 				e.printStackTrace();
 			} 
 		}
+		
+		else if (this.id == 399)
+		{
+			this.email = "Soldan.Bojan@gmail.com";
+			this.picked_team = "Packers";
+			this.picked_city = "Green Bay";
+			this.against_team = "Chiefs";
+			this.against_city = "Kansas City";
+			this.week_number = 3;
+			this.league_season_id = 1;
+			this.line = -7;
+			this.isHouseBet = 0;
+			this.result = "Good Luck";
+			try 
+			{
+				this.start = sdf.parse("28/09/2015 20:30:00");
+			} 
+			catch (ParseException e) 
+			{
+				e.printStackTrace();
+			} 
+		}
+		
+		else if (this.id == 999)
+		{
+			this.email = "Soldan.Bojan@gmail.com";
+			this.picked_team = "Lions";
+			this.picked_city = "Detroit";
+			this.against_team = "Broncos";
+			this.against_city = "Denver";
+			this.week_number = 3;
+			this.league_season_id = 1;
+			this.line = 3;
+			this.isHouseBet = 1;
+			this.result = "Good Luck";
+			try 
+			{
+				this.start = sdf.parse("27/09/2015 20:30:00");
+			} 
+			catch (ParseException e) 
+			{
+				e.printStackTrace();
+			} 
+		}
+		
+		
 	}
 	
 	public int getId()

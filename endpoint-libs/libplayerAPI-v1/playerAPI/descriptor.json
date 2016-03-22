@@ -1,13 +1,13 @@
 {
   "files": [
     {
-      "downloadUrl": "/downloads/playerAPI/v1/20160125115224/java/1.18.0-rc/lthoi_test_harness_appspot_com-playerAPI-v1-20160125115224-java-1.18.0-rc-sources.jar", 
-      "path": "lthoi_test_harness_appspot_com-playerAPI-v1-20160125115224-java-1.18.0-rc-sources.jar", 
+      "downloadUrl": "/downloads/playerAPI/v1/20160322223436/java/1.18.0-rc/lthoi_test_harness_appspot_com-playerAPI-v1-20160322223436-java-1.18.0-rc-sources.jar", 
+      "path": "lthoi_test_harness_appspot_com-playerAPI-v1-20160322223436-java-1.18.0-rc-sources.jar", 
       "type": "source", 
-      "timestamp": "2016-01-25 11:52"
+      "timestamp": "2016-03-22 22:34"
     }, 
     {
-      "path": "lthoi_test_harness_appspot_com-playerAPI-v1-20160125115224-java-1.18.0-rc.jar.properties", 
+      "path": "lthoi_test_harness_appspot_com-playerAPI-v1-20160322223436-java-1.18.0-rc.jar.properties", 
       "type": "android.properties"
     }
   ], 
@@ -674,5 +674,5 @@
   "version": "v1", 
   "language_version": "1.18.0-rc", 
   "id": "playerAPI:v1", 
-  "revision": 20160125115224
+  "revision": 20160322223436
 }

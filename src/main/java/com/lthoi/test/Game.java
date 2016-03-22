@@ -90,7 +90,7 @@ public class Game
 			this.away_bets.add(new User ("Bojan"));
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
-			this.user_net_home_bet = 0;
+			this.user_net_home_bet = -20;
 		}
 		else if (this.id == 99)  
 		{	
@@ -199,7 +199,7 @@ public class Game
 			this.away_bets.add(new User("Bruce"));
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
-			this.user_net_home_bet = -2.86;
+			this.user_net_home_bet = 2.86;
 		}
 		else if (this.id == 103)  
 		{	
@@ -466,7 +466,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 60;
 			this.secs_remaining = 00;
-			this.user_net_home_bet = -5.12;
+			this.user_net_home_bet = -5.72;
 		}
 	}
 	

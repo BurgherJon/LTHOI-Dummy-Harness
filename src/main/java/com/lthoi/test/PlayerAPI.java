@@ -17,8 +17,7 @@ import javax.inject.Named;
 
 public class PlayerAPI 
 {
-    
-	@ApiMethod(name = "getCurrentWeek")
+    @ApiMethod(name = "getCurrentWeek")
     public Week getCurrentWeek() 
     {
         Week response = new Week();
@@ -108,9 +107,9 @@ public class PlayerAPI
     	return response;
     }
     @ApiMethod(name = "setBet")
-    public void setBet(@Named("home_team") String home_team, @Named("league_season_id") int league_season_id, @Nullable @Named("id") int id) 
+    public Bet setBet(@Named("home_team") String home_team, @Named("league_season_id") int league_season_id, @Nullable @Named("id") int id) 
     {
-    	
+    	return new Bet(999);
     }
     
     @ApiMethod(name = "deleteBet")
@@ -120,9 +119,10 @@ public class PlayerAPI
     }
     
     @ApiMethod(name = "getTeam")
-    public Team getTeam (@Nullable @Named("id") int id, @Nullable @Named("city") String city, @Nullable @Named("team") String team)
+    public Team getTeam (@Named("id") int id, @Nullable @Named("city") String city, @Nullable @Named("team") String team)
     {
-    	return new Team();
+    	Team result = new Team();
+    	return result;
     }
     
     @ApiMethod(name = "getUser")
