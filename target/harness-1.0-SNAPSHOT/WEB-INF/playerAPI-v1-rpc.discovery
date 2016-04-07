@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"u_zXkMELIlX4ktyNbM2XKD4vK8E/4mty2-ju66_pYn7FaOKgxYwAxnY\"",
+ "etag": "\"u_zXkMELIlX4ktyNbM2XKD4vK8E/gX9W7V_4R-sFMu_EpebBgYLM2FY\"",
  "discoveryVersion": "v1",
  "id": "playerAPI:v1",
  "name": "playerAPI",
@@ -504,12 +504,16 @@
     },
     "id": {
      "type": "integer",
+     "required": true,
      "format": "int32"
     },
     "team": {
      "type": "string"
     }
    },
+   "parameterOrder": [
+    "id"
+   ],
    "returns": {
     "$ref": "Team"
    },
@@ -583,6 +587,9 @@
     "home_team",
     "league_season_id"
    ],
+   "returns": {
+    "$ref": "Bet"
+   },
    "scopes": [
     "https://www.googleapis.com/auth/userinfo.email"
    ]

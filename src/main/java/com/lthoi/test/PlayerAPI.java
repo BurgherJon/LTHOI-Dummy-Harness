@@ -17,7 +17,13 @@ import javax.inject.Named;
 
 public class PlayerAPI 
 {
-    @ApiMethod(name = "getCurrentWeek")
+    //Checking if a constructor can even be used here.
+	public PlayerAPI()
+	{
+			
+	}
+	
+	@ApiMethod(name = "getCurrentWeek")
     public Week getCurrentWeek() 
     {
         Week response = new Week();
