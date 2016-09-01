@@ -16,6 +16,7 @@ public class Game
 	private Date start;
 	private Date freeze;
 	private String week;
+	private int isFinished;
 	private int home_score;
 	private int away_score;
 	private ArrayList<User> home_bets;
@@ -64,6 +65,7 @@ public class Game
 			this.mins_remaining = 30;
 			this.secs_remaining = 00;
 			this.user_net_home_bet = -22.86;
+			this.isFinished = 0;
 		}
 		else if (this.id == 111)
 		{	
@@ -91,6 +93,7 @@ public class Game
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
 			this.user_net_home_bet = -20;
+			this.isFinished = 1;
 		}
 		else if (this.id == 99)  
 		{	
@@ -120,6 +123,7 @@ public class Game
 			this.away_bets.add(new User("Bojan"));
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = -17.14;
 		}
 		else if (this.id == 100)  //Had to guess on this because there weren't any bets on the game.  
@@ -146,6 +150,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 101)  //Had to guess on this because there weren't any bets on the game.  
@@ -172,6 +177,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 102)  
@@ -199,6 +205,7 @@ public class Game
 			this.away_bets.add(new User("Bruce"));
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 2.86;
 		}
 		else if (this.id == 103)  
@@ -225,6 +232,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 104)  
@@ -233,6 +241,7 @@ public class Game
 			this.home_city = "New England";
 			this.away_city = "Jacksonville";
 			this.away_team = "Jaguars";
+			this.isFinished = 1;
 			this.home_line = -14; 
 			try 
 			{
@@ -278,6 +287,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = -2.86;
 		}
 		else if (this.id == 106)  
@@ -304,6 +314,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 107)  
@@ -330,6 +341,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 108)  
@@ -357,6 +369,7 @@ public class Game
 			this.away_bets.add(new User("Aaron"));
 			this.mins_remaining = 00;
 			this.secs_remaining = 00;
+			this.isFinished = 1;
 			this.user_net_home_bet = 2.86;
 		}
 		else if (this.id == 109)  
@@ -384,6 +397,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 30;
 			this.secs_remaining = 00;
+			this.isFinished = 0;
 			this.user_net_home_bet = -2.86;
 		}
 		else if (this.id == 112)  
@@ -412,6 +426,7 @@ public class Game
 			this.away_bets.add(new User("Jonathan"));
 			this.mins_remaining = 60;
 			this.secs_remaining = 00;
+			this.isFinished = 0;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 114)  //Had to guess on this because there weren't any bets on the game.  
@@ -438,6 +453,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 30;
 			this.secs_remaining = 00;
+			this.isFinished = 0;
 			this.user_net_home_bet = 0;
 		}
 		else if (this.id == 113)  
@@ -466,6 +482,7 @@ public class Game
 			this.away_bets = new ArrayList<User> ();
 			this.mins_remaining = 60;
 			this.secs_remaining = 00;
+			this.isFinished = 0;
 			this.user_net_home_bet = -5.72;
 		}
 	}
