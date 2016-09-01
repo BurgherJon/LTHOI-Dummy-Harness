@@ -627,6 +627,16 @@ public class Game
 		secs_remaining = update;
 	}
 	
+	public int getisFinished()
+	{
+		return isFinished;
+	}
+	
+	public void setisFinished(int update)
+	{
+		isFinished = update;
+	}
+	
 	public double getuser_net_home_bet()
 	{
 		return user_net_home_bet;

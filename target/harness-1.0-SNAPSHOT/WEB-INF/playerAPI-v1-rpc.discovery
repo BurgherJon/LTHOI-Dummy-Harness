@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"zRMgE0l9nVDW4S28VYYcYQF9UW4/gX9W7V_4R-sFMu_EpebBgYLM2FY\"",
+ "etag": "\"zRMgE0l9nVDW4S28VYYcYQF9UW4/oJFpcWxt75Lhpe0-k7ntCX2VB3w\"",
  "discoveryVersion": "v1",
  "id": "playerAPI:v1",
  "name": "playerAPI",
@@ -180,6 +180,10 @@
      "type": "string"
     },
     "id": {
+     "type": "integer",
+     "format": "int32"
+    },
+    "isFinished": {
      "type": "integer",
      "format": "int32"
     },
