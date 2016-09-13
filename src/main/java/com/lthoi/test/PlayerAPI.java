@@ -21,7 +21,16 @@ public class PlayerAPI
 	public PlayerAPI()
 	{
 			
+		
 	}
+	
+	@ApiMethod(name = "getGame")
+    public Game getGame(@Named("league_season_id") int league_season_id, @Named("game_id") int game_id) 
+    {
+        Game response = new Game(game_id);
+
+        return response;
+    }
 	
 	@ApiMethod(name = "getCurrentWeek")
     public Week getCurrentWeek() 
@@ -36,6 +45,7 @@ public class PlayerAPI
     {
         Me response = new Me();
 
+        
         return response;
     }
     
