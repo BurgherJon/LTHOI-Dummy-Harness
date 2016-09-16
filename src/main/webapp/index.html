@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Leave the House Out of It!</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></link>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script> 	
+			function init() 
+			{
+				//Parameters are APIName,APIVersion,CallBack function,API Root 
+				//gapi.client.load('PlayerAPI')', 'v1', callback, 'https://LTHOIHarness.appspot.com/_ah/api');
+				gapi.client.load('playerAPI', 'v1', callback, 'http://localhost:8080/_ah/api');
+				var callback = function() 
+				{
+
+				}
+			}
+		</script>
+		<script src="https://apis.google.com/js/client.js?onload=init"></script>
+		<script src="appfunctions.js"></script>
+	</head>
+	<body>
+
+		<div id="maincontainer" class="container"><button type="submit" class="btn btn-lg btn-group-justified btn-danger" style="white-space: normal" onclick=getCurrentWeek()>IT'S EMBARESSING THAT I COULDN'T FIGURE OUT HOW TO LOAD THE PAGE WITHOUT USING THIS FUCKING BUTTON</button></div>
+		
+	</body>
+</html>
