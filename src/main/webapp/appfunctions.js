@@ -1,7 +1,7 @@
 
 var templeague_season_id = 1;
 var tempemail = "JonathanCavell@gmail.com";  // !CAUTION!
-var tempweek = 3;
+var tempweek = 3; // !CAUTION!
 //var currentDateTime = new Date("2015-09-23T15:00:00.000-04:00"); // !CAUTION! // before all games
 var currentDateTime = new Date("2015-09-27T15:00:00.000-04:00"); // !CAUTION! // midway through games
 
@@ -10,7 +10,7 @@ function getCurrentWeek()
 {
 
 	var requestData = {}; // request parameters
-	var currentWeek = 0; // 
+	var currentWeek = 0; //
 	
 		//document.getElementById('getCurrentWeek').innerHTML = testText;
 		
@@ -38,6 +38,7 @@ function doSomething()
 	
 }
 
+//GENERIC PAINTROW FUNCTION THAT RETURNS FORMATTED HTML TO REPAINT THE CONTENTS OF A DIV WITH A GAMEID
 function paintRow(item)
 {
 	//alert(item.id);
@@ -77,7 +78,6 @@ function paintRow(item)
 	if(betLocked)
 	{
 		//DISPLAYED LABELS FOR LOCKED GAMES
-		
 		displayTypeHome = "<div class=\"col-sm-2\" style=\"text-align:right;\"><h5>" + item.home_team + " | " + item.home_score + "</h5></div>";
 		displayTypeAway = "<div class=\"col-sm-2\" style=\"text-align:left;\"><h5>" + item.away_score + " | " + item.away_team + "</h5></div>";
 	}
@@ -160,6 +160,7 @@ function paintRow(item)
 	
 }
 
+//INITIAL SCREEN PAINT FUNCTION THAT PAINTS A DIV FOR EACH GAME
 function getGames(currentWeek)
 {
 	var testText = "Test worked";
@@ -199,6 +200,7 @@ function getGames(currentWeek)
    	});
 }
 
+//CALL TO SET BET, THEN PASSES THE ID ON TO GETGAME TO RETRIEVE SINGLE DAY
 function setBet(team, id)
 {
 	//document.getElementById('test').innerHTML = team;
@@ -225,6 +227,7 @@ function setBet(team, id)
 	
 }
 
+//CALL TO DELETE BET BASED ON PARAMETERS.  THIS IS UNTESTED.
 function deleteBet(team, id)  // !CAUTION!
 {
 	var requestData = {};
@@ -247,6 +250,7 @@ function deleteBet(team, id)  // !CAUTION!
 	});
 }
 
+//GETS SINGLE GAME TO REPAINT THE CONTENTS OF THE SINGLE ROW DIV
 function getGame(id)
 {
 	//alert("inside GetGame");

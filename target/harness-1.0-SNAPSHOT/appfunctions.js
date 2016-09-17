@@ -8,36 +8,28 @@ var currentDateTime = new Date("2015-09-27T15:00:00.000-04:00"); // !CAUTION! //
 
 function getCurrentWeek()
 {
-	alert("inside")
+
 	var requestData = {}; // request parameters
+	var currentWeek = 0; // 
 	
-	var testText = "Test worked - Get Current Week";
-	var goodHTML = "<div>WeekStuff</div>";
-   	var currentWeek = 0;
+		//document.getElementById('getCurrentWeek').innerHTML = testText;
+		
+		gapi.client.playerAPI.getCurrentWeek(requestData).execute(function(resp)  
+		{
+			
+			if (!resp.code) 
+			{
+				currentWeek = resp.number;
+			}
+			else
+			{
+				goodHTML = goodHTML + 'Error in retreiving 1';
+				document.getElementById('maincontainer').innerHTML = goodHTML;
+			}
+		});
+		
+	getGames(currentWeek);
 	
-        //document.getElementById('getCurrentWeek').innerHTML = testText;
-        
-        gapi.client.playerAPI.getCurrentWeek(requestData).execute(function(resp)  
-   		{		
-   			
-   			
-            	if (!resp.code) 
-           	{
-    			//resp.items = resp.items || [];
-	   			
-				//document.getElementById('getCurrentWeekReturn').innerHTML = resp.number;
-    			currentWeek = resp.number;
-    			
-           	}
-    		else
-   			{
-    			goodHTML = goodHTML + 'Error in retreiving 1';
-    			document.getElementById('maincontainer').innerHTML = goodHTML;
-   			}
-   	});
-   	
-   	getGames(currentWeek);
-   	
 }
 
 function doSomething()
