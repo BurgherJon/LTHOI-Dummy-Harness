@@ -208,7 +208,7 @@ function setBet(team, id)
 	var requestData = {};
 	requestData.league_season_id = templeague_season_id;  //
 	requestData.home_team = team;
-	requestData.id = 1;  // this is what's wrong with it
+	requestData.id = 0;  // this is what's wrong with it
 	
 	gapi.client.playerAPI.setBet(requestData).execute(function(resp)  
 	{
